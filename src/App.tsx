@@ -1,9 +1,7 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import {ButtonPrimary} from "./Application/Component/ButtonPrimary.tsx";
 import { ButtonSecondaire } from './Application/Component/ButtonSecondaire.tsx';
 import { ButtonExterne } from './Application/Component/ButtonExterne.tsx';
+import {FcGoogle} from "react-icons/fc";
 
 
 function App() {
@@ -24,7 +22,7 @@ function App() {
             PREMIUM
         </ButtonSecondaire>
 
-       <ButtonExterne>
+       <ButtonExterne iconLeft={<FcGoogle />}>
             Connexion avec Google
       </ButtonExterne>
        <ButtonExterne>
@@ -33,10 +31,6 @@ function App() {
        <ButtonExterne>
             Connexion avec Facebook
       </ButtonExterne>
-
-
-      
-      
     </>
   )
 }

@@ -1,13 +1,12 @@
 import React from "react";
+import {Button} from "@mantine/core";
 
 export const ButtonSecondaire: React.FC<{children: React.ReactNode}> = ({children}) => {
     return (
         <>
-            <button
-                className="bg-red-700 text-black font-extrabold py-2 px-10 rounded-full font-raleway">
-            
+            <Button variant="filled" color="rgba(235, 31, 18, 1)" size="lg" radius="lg">
                 {children}
-            </button>
+            </Button>;
         </>
     )
 }
