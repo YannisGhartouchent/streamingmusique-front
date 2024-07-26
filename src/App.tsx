@@ -2,6 +2,9 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import {ButtonPrimary} from "./Application/Component/ButtonPrimary.tsx";
+import { ButtonSecondaire } from './Application/Component/ButtonSecondaire.tsx';
+import { ButtonExterne } from './Application/Component/ButtonExterne.tsx';
+
 
 function App() {
 
@@ -16,10 +19,24 @@ function App() {
         <ButtonPrimary>
             Préférences
         </ButtonPrimary>
-      <button className="bg-stone-700 text-white font-extrabold py-2 px-10 rounded-full font-raleway ring ring-white">Connexion avec Google</button>
-      <button className="bg-stone-700 text-white font-extrabold py-2 px-10 rounded-full font-raleway ring ring-white">Connexion avec Apple</button>
-      <button className="bg-stone-700 text-white font-extrabold py-2 px-10 rounded-full font-raleway ring ring-white">Connexion avec Facebook</button>
-      <button className="bg-red-700 text-black font-extrabold py-2 px-10 rounded-full font-raleway">PREMIUM</button>
+
+        <ButtonSecondaire>
+            PREMIUM
+        </ButtonSecondaire>
+
+       <ButtonExterne>
+            Connexion avec Google
+      </ButtonExterne>
+       <ButtonExterne>
+            Connexion avec Apple
+      </ButtonExterne>
+       <ButtonExterne>
+            Connexion avec Facebook
+      </ButtonExterne>
+
+
+      
+      
     </>
   )
 }
