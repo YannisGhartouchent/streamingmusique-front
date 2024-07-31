@@ -5,7 +5,8 @@ import { InputEmail } from "./Application/Component/InputEmail.tsx";
 import {FcGoogle} from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
-import './App.css'; // Assurez-vous d'avoir un fichier CSS pour les styles globaux
+import './App.css';
+import {Logo} from "./Application/Component/Logo.tsx"; // Assurez-vous d'avoir un fichier CSS pour les styles globaux
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
 
     
     <>
+        <Logo w={"200"} h={"167"} />
         <InputEmail>
         Adresse Email
         </InputEmail>
