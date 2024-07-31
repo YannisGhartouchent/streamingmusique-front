@@ -26,7 +26,7 @@ function App() {
         </ButtonPrimary>
         <ButtonPrimary>
             S'inscrire
-        </ButtonPrimary>
+        </ButtonPrimary> 
         <ButtonPrimary>
             Préférences
         </ButtonPrimary>
