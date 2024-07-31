@@ -1,13 +1,22 @@
 import {ButtonPrimary} from "./Application/Component/ButtonPrimary.tsx";
 import { ButtonSecondaire } from './Application/Component/ButtonSecondaire.tsx';
 import { ButtonExterne } from './Application/Component/ButtonExterne.tsx';
+import { InputEmail } from "./Application/Component/InputEmail.tsx";
 import {FcGoogle} from "react-icons/fc";
-
+import { FaApple } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import './App.css'; // Assurez-vous d'avoir un fichier CSS pour les styles globaux
 
 function App() {
 
   return (
+
+
+    
     <>
+        <InputEmail>
+        Adresse Email
+        </InputEmail>
         <ButtonPrimary>
             Se connecter
         </ButtonPrimary>
@@ -25,10 +34,10 @@ function App() {
        <ButtonExterne iconLeft={<FcGoogle />}>
             Connexion avec Google
       </ButtonExterne>
-       <ButtonExterne>
+       <ButtonExterne iconLeft={<FaApple />}>
             Connexion avec Apple
       </ButtonExterne>
-       <ButtonExterne>
+       <ButtonExterne iconLeft={<FaFacebook />}>
             Connexion avec Facebook
       </ButtonExterne>
     </>

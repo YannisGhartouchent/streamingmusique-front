@@ -1,5 +1,6 @@
-import { Button } from "@mantine/core";
 import React from "react";
+import { Button } from "@mantine/core";
+
 
 export const ButtonExterne: React.FC<{
     children: React.ReactNode,
@@ -19,8 +20,8 @@ export const ButtonExterne: React.FC<{
                 color={"rgba(40, 38, 38, 1)"}
                 c={"white"}
                 variant="filled"
-                size="lg"
-                radius="lg"
+                size="xs"
+                radius="md"
                 style={{borderColor: "white"}}
             >
                 {children}

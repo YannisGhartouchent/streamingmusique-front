@@ -8,8 +8,8 @@ export const ButtonPrimary: React.FC<{children: React.ReactNode}> = ({children})
                 className={"hover:bg-[#282626]"}
                 variant="filled"
                 color="rgba(0, 0, 0, 1)"
-                size="lg"
-                radius="lg"
+                size= "xs"
+                radius="md"
             >
                 {children}
             </Button>
