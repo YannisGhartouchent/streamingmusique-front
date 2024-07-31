@@ -1,7 +1,7 @@
 import {ButtonPrimary} from "./Application/Component/ButtonPrimary.tsx";
 import { ButtonSecondaire } from './Application/Component/ButtonSecondaire.tsx';
 import { ButtonExterne } from './Application/Component/ButtonExterne.tsx';
-import { InputEmail } from "./Application/Component/InputEmail.tsx";
+import {InputCustom} from "./Application/Component/InputCustom.tsx";
 import {FcGoogle} from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
@@ -16,9 +16,11 @@ function App() {
     
     <>
         <Logo w={"200"} h={"167"} />
-        <InputEmail>
-        Adresse Email
-        </InputEmail>
+        
+        <InputCustom withAsterisk label={"Email"} placeholder={"Adresse Email"}/>
+        <InputCustom placeholder={"Name"}/>
+        <InputCustom placeholder={"LastName"}/>
+        
         <ButtonPrimary>
             Se connecter
         </ButtonPrimary>
