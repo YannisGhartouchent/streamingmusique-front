@@ -1,5 +1,7 @@
 import React from "react";
-import {Input, MantineRadius, MantineSpacing} from '@mantine/core';
+import {Input, MantineRadius, MantineSpacing, } from '@mantine/core';
+
+
 
 type InputCustomPropsType = {
     disabled?: boolean
@@ -12,7 +14,9 @@ type InputCustomPropsType = {
     ml?: MantineSpacing
     mr?: MantineSpacing
     withAsterisk?: boolean
+   
 }
+   
 
 export const InputCustom: React.FC<InputCustomPropsType> = ({
     label,
@@ -24,11 +28,20 @@ export const InputCustom: React.FC<InputCustomPropsType> = ({
     disabled = false,
     error,
     radius = "md",
-    placeholder
+    placeholder,
+    
+    
+    
+    
+    
 }) => {
     return (
+      
+        
         <Input.Wrapper withAsterisk={withAsterisk} label={label} mb={mb} mt={mt} mr={mr} ml={ml}>
             <Input disabled={disabled} error={error} radius={radius} placeholder={placeholder} />
         </Input.Wrapper>
-    )
-};
+        
+       
+        )
+    };
