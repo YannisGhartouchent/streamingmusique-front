@@ -1,6 +1,7 @@
 import React from "react";
+import {ApoPropsType} from "../Type/ApoType.ts";
 
-export const Logo: React.FC<{w?: string, h?: string}> = ({ w, h }) => {
+export const Logo: React.FC<ApoPropsType> = ({ w, h }) => {
     return (
         <>
             <svg width={w ? w : "508"} height={h ? h : "475"} viewBox="0 0 208 175" fill="none" xmlns="http://www.w3.org/2000/svg">
