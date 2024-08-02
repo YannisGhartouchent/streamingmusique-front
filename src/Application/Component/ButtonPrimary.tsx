@@ -13,8 +13,10 @@ export const ButtonPrimary: React.FC<ApoPropsType> = ({
                 className={"hover:bg-[#282626]"}
                 variant="filled"
                 color="rgba(0, 0, 0, 1)"
-                size= "xs"
+                size= "sm"
                 radius="md"
+                mt="lg"
+                
             >
                 {children}
             </Button>

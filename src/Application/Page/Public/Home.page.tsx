@@ -9,6 +9,7 @@ export const HomePage: React.FC = () => {
     const [conditionChecked, setConditionChecked] = useState(false)
     const [conditionError, setConditionError] = useState(false)
     
+    
     const colorPaper = useMantineTheme().colors.dark[2]
     
     const handlerLogin = () => {
@@ -27,17 +28,19 @@ export const HomePage: React.FC = () => {
     
     return (
         <>
-            <Flex direction={"column"} align={"center"} justify={"center"}>
+            <Flex direction={"column"} align={"center"} justify={"center"} mt={"lg"}>
                 <Logo/>
-                <Paper mt={80} style={{backgroundColor: colorPaper}} pt={20} pb={20} pl={50} pr={50} w={"50%"} radius={"xl"}>
-                    <Input.Wrapper label={"Adresse e-mail"}>
+                <Paper mt={50} style={{backgroundColor: colorPaper}} pt={20} pb={20} pl={20} pr={20} w={"450px"} radius={"md"}>
+                
+                    <Input.Wrapper label={"Adresse E-mail"}>
+                    
                         <Input
                             value={email}
-                            placeholder={"E-mail"}
+                            placeholder={"Adresse E-mail"}
                             onChange={(e) => setEmail(e.currentTarget.value)}
                         />
                     </Input.Wrapper>
-                    <Input.Wrapper label={"Mot de passe"}>
+                    <Input.Wrapper label={"Mot de passe"} mt="md">
                         <Input
                             value={password}
                             placeholder={"Mot de passe"}
@@ -45,15 +48,18 @@ export const HomePage: React.FC = () => {
                         />
                     </Input.Wrapper>
                     <Checkbox
-                        label="J'accèpte les conditions général"
+                        label="J'accèpte les conditions générales"
+                        mt="lg"
                         checked={conditionChecked}
                         onChange={() => setConditionChecked(!conditionChecked)}
                     />
-                    {conditionError && <Text>Vous devez accepter les conditions général</Text>}
-                    <ButtonPrimary onClickButton={handlerLogin}>Se connecter</ButtonPrimary>
-                    <Flex w={"100%"} align={"center"}>
+                    {conditionError && <Text>Vous devez accepter les conditions générales</Text>}
+                    <ButtonPrimary
+                    
+                     onClickButton={handlerLogin}>Se connecter</ButtonPrimary>
+                    <Flex w={"100%"} align={"baseline"} mt={"xs"}>
                         <Text>Tu n'as pas encore de compte APOLLON ?</Text>
-                        <NavLink c={"#ff0000"} fw={"bold"} href={"/register"} label={"Inscription"} w={"fit-content"}/>
+                        <NavLink c={"#ff0000"} fw={"bold"} href={"/register"} label={"Inscription"} w={"fit-content"} mt="xs"/>
                     </Flex>
                 </Paper>
             </Flex>
