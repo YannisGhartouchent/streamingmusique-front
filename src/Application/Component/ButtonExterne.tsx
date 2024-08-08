@@ -1,26 +1,26 @@
-import { Button } from "@mantine/core";
 import React from "react";
+import { Button } from "@mantine/core";
+import {ApoPropsType} from "../Type/ApoType.ts";
 
-export const ButtonExterne: React.FC<{
-    children: React.ReactNode,
-    iconLeft?: React.ReactNode,
-    iconRight?: React.ReactNode,
-}> = ({
+
+export const ButtonExterne: React.FC<ApoPropsType> = ({
     children,
-    iconLeft,
-    iconRight,
+    leftSection,
+    rightSection,
+    onClickButton
 }) => {
     return (
         <>
             <Button
-                leftSection={iconLeft}
-                rightSection={iconRight}
+                onClick={onClickButton}
+                leftSection={leftSection}
+                rightSection={rightSection}
                 className={"hover:bg-[#000000]"}
                 color={"rgba(40, 38, 38, 1)"}
                 c={"white"}
                 variant="filled"
-                size="lg"
-                radius="lg"
+                size="xs"
+                radius="md"
                 style={{borderColor: "white"}}
             >
                 {children}

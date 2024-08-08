@@ -11,7 +11,7 @@
 
 /* style global */
 
-body {
-    background-color: #000000;
-    color: #000000;
+html, body, #root {
+    height: 100%;
+    width: 100%;
 }
