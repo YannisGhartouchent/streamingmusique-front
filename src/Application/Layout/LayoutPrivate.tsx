@@ -20,7 +20,7 @@ export const LayoutPrivate: React.FC = () => {
                 style={{backgroundColor: "#cb0000", border: "none"}}
                 
             >
-                <p>je le menu lateral</p>
+                <p>je suis le menu lateral</p>
                 {/*  TODO : mettre les liens  */}
             </AppShell.Navbar>
             
