@@ -10,6 +10,7 @@ export const LayoutPrivate: React.FC = () => {
             navbar={{
                 width: 300,
                 breakpoint: 'sm',
+                
             }}
             footer={{
                 height: 100,
@@ -17,6 +18,7 @@ export const LayoutPrivate: React.FC = () => {
         >
             <AppShell.Navbar
                 style={{backgroundColor: "#cb0000", border: "none"}}
+                
             >
                 <p>je le menu lateral</p>
                 {/*  TODO : mettre les liens  */}

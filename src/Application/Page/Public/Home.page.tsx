@@ -66,15 +66,11 @@ export const HomePage: React.FC = () => {
                     labelPosition="left"
                     label="Se souvenir de moi"
                     size="xs"
+                    mt={"sm"}
+                    
                     />
                         </Input.Wrapper>
-                        <Checkbox
-                            label="J'accepte les conditions générales"
-                            mt="lg"
-                            checked={conditionChecked}
-                            onChange={() => setConditionChecked(!conditionChecked)}
-                        />
-                        {conditionError && <Text>Vous devez accepter les conditions générales</Text>}
+
                         <ButtonPrimary
                             onClickButton={handlerLogin}
                             w={"50%"}
@@ -86,7 +82,7 @@ export const HomePage: React.FC = () => {
                     </Flex>
                     <Flex w={"100%"} align={"baseline"} mt={"xs"}>
                         <Text>Tu n'as pas encore de compte APOLLON ?</Text>
-                        <NavLink
+                        { <NavLink
                             bg={"transparent"}
                             c={"#ff0000"}
                             fw={"bold"}
@@ -94,7 +90,9 @@ export const HomePage: React.FC = () => {
                             label={"Inscription"}
                             w={"fit-content"}
                             mt="xs"
-                        />
+                            
+                        /> }
+                        
                     </Flex>
                     
                     <Divider size={"xl"} my="md" bg={"white"} />

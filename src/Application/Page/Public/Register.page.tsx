@@ -1,7 +1,8 @@
 import {Logo} from "../../Component/Logo.tsx";
-import { Checkbox, Flex, Input, NavLink, Paper, Text, useMantineTheme } from "@mantine/core";
+import { Checkbox, Flex, Input, Paper, Text, useMantineTheme } from "@mantine/core";
 import {ButtonPrimary} from "../../Component/ButtonPrimary.tsx";
 import {useState} from "react";
+import { NavLink } from "react-router-dom";
     
 export const RegisterPage: React.FC = () => {
     const [email, setEmail] = useState("")
@@ -29,7 +30,10 @@ export const RegisterPage: React.FC = () => {
  return (
         <>
           <Flex direction={"column"} align={"center"} justify={"center"} w={"100%"} h={"100%"}>
-                <Logo/>
+               
+                <NavLink to ={"/"}>
+                 <Logo/> 
+                </NavLink>
                 <Paper
                     mt={50}
                     style={{backgroundColor: colorPaper, display: "flex", flexDirection: "column", alignItems: "center"}}
@@ -74,6 +78,13 @@ export const RegisterPage: React.FC = () => {
                             label="J’accepte de recevoir des actualités d’APOLLON"
                             className= {"text-nowrap"}
                             mt="xl"
+                            checked={conditionChecked}
+                            onChange={() => setConditionChecked(!conditionChecked)}
+                            
+                        />
+                         <Checkbox
+                            label="J'accepte les conditions générales"
+                            mt="lg"
                             checked={conditionChecked}
                             onChange={() => setConditionChecked(!conditionChecked)}
                         />
