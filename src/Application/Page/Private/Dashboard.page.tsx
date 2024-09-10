@@ -1,6 +1,4 @@
 import {Title } from "@mantine/core";
-import { MenulateralPage } from "../Private/Menulateral.page";
-
 
 export const DashboardPage = () => {
     return (

@@ -5,7 +5,7 @@ import {RegisterPage} from "../Application/Page/Public/Register.page.tsx";
 import {LayoutPrivate} from "../Application/Layout/LayoutPrivate.tsx";
 import {DashboardPage} from "../Application/Page/Private/Dashboard.page.tsx";
 import {LibraryPage} from "../Application/Page/Private/Library.page.tsx";
-import {MenulateralPage} from "../Application/Page/Private/Menulateral.page.tsx";
+
 
 
 export const browserRouter = createBrowserRouter([
@@ -38,11 +38,8 @@ export const browserRouter = createBrowserRouter([
                 path: "library",
                 element: <LibraryPage />
             },
-            {
-            path: "menu lateral",
-            element: <MenulateralPage />
+        
             
-            },
-        ]
+]
     }
 ])
