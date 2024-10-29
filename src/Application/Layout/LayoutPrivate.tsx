@@ -28,24 +28,33 @@ export const LayoutPrivate: React.FC = () => {
         <Box
           style={{
             display: "flex",
+
             justifyContent: "center",
             alignItems: "center",
             height: "100vh",
-            backgroundColor: "#f0f0f0",
+
+            backgroundColor: "#ffffff",
             flexDirection: "column",
           }}
         >
           {/* Ajouter les NavLinks avec des bordures */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "20px",
+              marginTop: "-20px",
+            }}
+          >
             {/* NavLink Activity avec bordure */}
             <div
               style={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                padding: '10px',
-                border: '2px solid black', // Bordure noire
-                borderRadius: '30px', // Coins arrondis
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                padding: "10px",
+                border: "2px solid black", // Bordure noire
+                borderRadius: "30px", // Coins arrondis
               }}
             >
               <FaUserFriends size={30} />
@@ -54,12 +63,12 @@ export const LayoutPrivate: React.FC = () => {
             {/* NavLink Compte avec bordure */}
             <div
               style={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                padding: '10px',
-                border: '2px solid black', // Bordure noire
-                borderRadius: '30px', // Coins arrondis
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                padding: "10px",
+                border: "2px solid black", // Bordure noire
+                borderRadius: "30px", // Coins arrondis
               }}
             >
               <VscAccount size={30} />
@@ -68,12 +77,12 @@ export const LayoutPrivate: React.FC = () => {
             {/* NavLink Notifications avec bordure */}
             <div
               style={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                padding: '10px',
-                border: '2px solid black', // Bordure noire
-                borderRadius: '30px', // Coins arrondis
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                padding: "10px",
+                border: "2px solid black", // Bordure noire
+                borderRadius: "30px", // Coins arrondis
               }}
             >
               <IoIosNotifications size={30} />
@@ -134,7 +143,7 @@ export const LayoutPrivate: React.FC = () => {
               </form>
               <NavLink
                 leftSection={<RiHome2Fill />}
-                c={"#000000"}
+                c={"black hover:black"}
                 fw={"bold"}
                 href={"/Menu Latéral"}
                 label={"ACCUEIL"}

@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "@mantine/core";
-import { IoIosNotifications } from "react-icons/io"; // Correct importation
+import { Notification } from "@mantine/core"
 
 export const NotificationNavLink: React.FC = () => {
   return (
@@ -17,12 +17,13 @@ export const NotificationNavLink: React.FC = () => {
             border: '2px solid #000000', // Bordure autour de l'icône
             backgroundColor: '#ffffff', // Fond du cercle
             marginRight: '10px' // Espacement entre l'icône et le texte
+            
           }}
         >
-          <IoIosNotifications size={30} />
+          < IoIosNotifications size={30} />
         </div>
       } // Icône avec bordure
-      href={"/notifications"} // Lien vers la page de notifications
+      href={"/activités"} // Lien vers la page de notifications
       w={"fit-content"} // Largeur ajustée au contenu
       mt="xs" // Marge au-dessus
       style={{ 
@@ -35,3 +36,6 @@ export const NotificationNavLink: React.FC = () => {
     />
   );
 };
+
+export { IoIosNotifications };
+
