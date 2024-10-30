@@ -4,9 +4,9 @@ import { AppShell, Box, Paper, Title, NavLink, Flex } from "@mantine/core";
 import { RiHome2Fill } from "react-icons/ri";
 import { TiMessages } from "react-icons/ti";
 import { LuLibrary } from "react-icons/lu";
-import { IoIosNotifications } from "react-icons/io"; // Import direct de l'icône
-import { FaUserFriends } from "react-icons/fa"; // Correct importation
-import { VscAccount } from "react-icons/vsc"; // Correct importation
+import { IoIosNotifications } from "react-icons/io"; 
+import { FaUserFriends } from "react-icons/fa"; 
+import { VscAccount } from "react-icons/vsc"; 
 import { LogoNoir } from "../../Application/Component/LogoNoir";
 import { ButtonSecondaire } from "../Component/ButtonSecondaire";
 
