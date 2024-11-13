@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom"; // Importez NavLink depuis react-router-dom
+import { NavLink } from "react-router-dom"; 
 
 export const ButtonArtist: React.FC = () => {
   return (
@@ -17,7 +17,7 @@ export const ButtonArtist: React.FC = () => {
           />
         </div>
 
-        {/* Utilisation de NavLink pour rendre le nom de l'artiste cliquable */}
+        
         <NavLink
           to="/artist/artist-name"
           className="text-white font-bold text-sm hover:underline"
@@ -27,7 +27,7 @@ export const ButtonArtist: React.FC = () => {
         </NavLink>
       </div>
 
-      {/* Répétez la structure pour d'autres albums et artistes */}
+    
       <div className="flex flex-col">
         <div
           role="button"

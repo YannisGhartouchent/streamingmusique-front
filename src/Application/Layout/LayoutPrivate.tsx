@@ -24,7 +24,7 @@ export const LayoutPrivate: React.FC = () => {
       }}
     >
       <AppShell.Navbar style={{ backgroundColor: "#cb0000", border: "none" }}>
-        {/* Liens de navigation */}
+       
         <Box
           style={{
             display: "flex",
@@ -37,7 +37,7 @@ export const LayoutPrivate: React.FC = () => {
             flexDirection: "column",
           }}
         >
-          {/* Ajouter les NavLinks avec des bordures */}
+          
           <div
             style={{
               display: "flex",
@@ -46,43 +46,42 @@ export const LayoutPrivate: React.FC = () => {
               marginTop: "-20px",
             }}
           >
-            {/* NavLink Activity avec bordure */}
+          
             <div
               style={{
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
                 padding: "10px",
-                border: "2px solid black", // Bordure noire
-                borderRadius: "30px", // Coins arrondis
+                border: "2px solid black", 
+                borderRadius: "30px", 
               }}
             >
               <FaUserFriends size={30} />
             </div>
-
-            {/* NavLink Compte avec bordure */}
+            
             <div
               style={{
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
                 padding: "10px",
-                border: "2px solid black", // Bordure noire
-                borderRadius: "30px", // Coins arrondis
+                border: "2px solid black",
+                borderRadius: "30px", 
               }}
             >
               <VscAccount size={30} />
             </div>
 
-            {/* NavLink Notifications avec bordure */}
+            
             <div
               style={{
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
                 padding: "10px",
-                border: "2px solid black", // Bordure noire
-                borderRadius: "30px", // Coins arrondis
+                border: "2px solid black", 
+                borderRadius: "30px", 
               }}
             >
               <IoIosNotifications size={30} />
@@ -175,7 +174,7 @@ export const LayoutPrivate: React.FC = () => {
             </Flex>
           </Paper>
 
-          {/* Bouton placé sous Paper */}
+          
           <div style={{ marginTop: "30px" }}>
             <ButtonSecondaire />
           </div>

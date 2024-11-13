@@ -1,6 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom"; // Importez NavLink depuis react-router-dom
-
+import { NavLink } from "react-router-dom"; 
 export const ButtonCover: React.FC = () => {
   return (
     <div className="flex space-x-4 ml-3 mt-2">
@@ -16,7 +15,7 @@ export const ButtonCover: React.FC = () => {
             className="w-full h-full object-cover"
           />
         </div>
-        {/* Utilisation de NavLink pour rendre le titre de l'album cliquable */}
+        
         <NavLink
           to="/album/album-name"
           className="text-white text-sm font-bold mt-2 hover:underline"
@@ -24,7 +23,7 @@ export const ButtonCover: React.FC = () => {
         >
           Nom de l'album
         </NavLink>
-        {/* Utilisation de NavLink pour rendre le nom de l'artiste cliquable */}
+        
         <NavLink
           to="/artist/artist-name"
           className="text-gray-400 text-sm hover:underline"
@@ -34,7 +33,7 @@ export const ButtonCover: React.FC = () => {
         </NavLink>
       </div>
 
-      {/* Répétez la structure pour d'autres albums et artistes */}
+      
       <div className="flex flex-col">
         <div
           role="button"
